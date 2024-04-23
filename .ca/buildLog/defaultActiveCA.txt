@@ -1,0 +1,816 @@
+make -f nbproject/Makefile-defaultActiveCA.mk SUBPROJECTS= .clean-conf
+make[1]: Entering directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+rm -f  -r .ca/build/defaultActiveCA/production
+rm -f  -r .ca/dist/defaultActiveCA/production
+make[1]: Leaving directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+[32mCLEAN SUCCESSFUL (total time: 463ms)[0m
+make -f nbproject/Makefile-defaultActiveCA.mk SUBPROJECTS= .build-conf
+make  -f nbproject/Makefile-defaultActiveCA.mk .ca/dist/defaultActiveCA/production/mediSync.X.production.hex
+make[2]: Entering directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+"C:\Program Files\Microchip\xc8\v2.46\bin\xc8-cc.exe"  -mcpu=18F4321 -c   -mdfp="D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O3 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/defaultActiveCA/production/servo.p1 servo.c 
+::: advisory: (2051) the current license does not permit the selected optimization level, using optimization level 2
+make[2]: Leaving directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+make[2]: Entering directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+"C:\Program Files\Microchip\xc8\v2.46\bin\xc8-cc.exe"  -mcpu=18F4321 -c   -mdfp="D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O3 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/defaultActiveCA/production/actuator.p1 actuator.c 
+::: advisory: (2051) the current license does not permit the selected optimization level, using optimization level 2
+actuator.c:6:5: warning: 'RC2' is deprecated [-Wdeprecated-declarations]
+    RC2     = 0;     // RC2 output low
+    ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8162:41: note: 'RC2' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC2                 __at(0x7C12);       // @ (0xF82 * 8 + 2)
+                                        ^
+actuator.c:21:23: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned char' [-Wconversion]
+  CCPR1L  =   pwm_duty>>2;
+          ~   ~~~~~~~~^~~
+actuator.c:25:9: warning: 'RD1' is deprecated [-Wdeprecated-declarations]
+        H_DRIVER_IN_1 = hDriverIn1;
+        ^
+./actuator.h:6:23: note: expanded from macro 'H_DRIVER_IN_1'
+#define H_DRIVER_IN_1 RD1
+                      ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8213:41: note: 'RD1' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD1                 __at(0x7C19);       // @ (0xF83 * 8 + 1)
+                                        ^
+actuator.c:25:25: warning: implicit conversion loses integer precision: 'int' to '__bit' [-Wconversion]
+        H_DRIVER_IN_1 = hDriverIn1;
+                      ~ ^~~~~~~~~~
+actuator.c:26:9: warning: 'RD0' is deprecated [-Wdeprecated-declarations]
+        H_DRIVER_IN_2= hDriverIn2;
+        ^
+./actuator.h:7:23: note: expanded from macro 'H_DRIVER_IN_2'
+#define H_DRIVER_IN_2 RD0
+                      ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8210:41: note: 'RD0' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD0                 __at(0x7C18);       // @ (0xF83 * 8 + 0)
+                                        ^
+actuator.c:26:24: warning: implicit conversion loses integer precision: 'int' to '__bit' [-Wconversion]
+        H_DRIVER_IN_2= hDriverIn2;
+                     ~ ^~~~~~~~~~
+6 warnings generated.
+make[2]: Leaving directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+make[2]: Entering directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+"C:\Program Files\Microchip\xc8\v2.46\bin\xc8-cc.exe"  -mcpu=18F4321 -c   -mdfp="D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O3 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/defaultActiveCA/production/lcd.p1 lcd.c 
+::: advisory: (2051) the current license does not permit the selected optimization level, using optimization level 2
+lcd.c:18:3: warning: 'RD4' is deprecated [-Wdeprecated-declarations]
+                D4 = 1;
+                ^
+lcd.c:7:12: note: expanded from macro 'D4'
+#define D4 RD4
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8225:41: note: 'RD4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD4                 __at(0x7C1C);       // @ (0xF83 * 8 + 4)
+                                        ^
+lcd.c:20:3: warning: 'RD4' is deprecated [-Wdeprecated-declarations]
+                D4 = 0;
+                ^
+lcd.c:7:12: note: expanded from macro 'D4'
+#define D4 RD4
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8225:41: note: 'RD4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD4                 __at(0x7C1C);       // @ (0xF83 * 8 + 4)
+                                        ^
+lcd.c:23:3: warning: 'RD5' is deprecated [-Wdeprecated-declarations]
+                D5 = 1;
+                ^
+lcd.c:8:12: note: expanded from macro 'D5'
+#define D5 RD5
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8228:41: note: 'RD5' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD5                 __at(0x7C1D);       // @ (0xF83 * 8 + 5)
+                                        ^
+lcd.c:25:3: warning: 'RD5' is deprecated [-Wdeprecated-declarations]
+                D5 = 0;
+                ^
+lcd.c:8:12: note: expanded from macro 'D5'
+#define D5 RD5
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8228:41: note: 'RD5' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD5                 __at(0x7C1D);       // @ (0xF83 * 8 + 5)
+                                        ^
+lcd.c:28:3: warning: 'RD6' is deprecated [-Wdeprecated-declarations]
+                D6 = 1;
+                ^
+lcd.c:9:12: note: expanded from macro 'D6'
+#define D6 RD6
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8231:41: note: 'RD6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD6                 __at(0x7C1E);       // @ (0xF83 * 8 + 6)
+                                        ^
+lcd.c:30:3: warning: 'RD6' is deprecated [-Wdeprecated-declarations]
+                D6 = 0;
+                ^
+lcd.c:9:12: note: expanded from macro 'D6'
+#define D6 RD6
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8231:41: note: 'RD6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD6                 __at(0x7C1E);       // @ (0xF83 * 8 + 6)
+                                        ^
+lcd.c:33:3: warning: 'RD7' is deprecated [-Wdeprecated-declarations]
+                D7 = 1;
+                ^
+lcd.c:10:12: note: expanded from macro 'D7'
+#define D7 RD7
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8234:41: note: 'RD7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD7                 __at(0x7C1F);       // @ (0xF83 * 8 + 7)
+                                        ^
+lcd.c:35:3: warning: 'RD7' is deprecated [-Wdeprecated-declarations]
+                D7 = 0;
+                ^
+lcd.c:10:12: note: expanded from macro 'D7'
+#define D7 RD7
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8234:41: note: 'RD7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD7                 __at(0x7C1F);       // @ (0xF83 * 8 + 7)
+                                        ^
+lcd.c:39:2: warning: 'RD2' is deprecated [-Wdeprecated-declarations]
+        RS = 0;             // => RS = 0
+        ^
+lcd.c:5:12: note: expanded from macro 'RS'
+#define RS RD2
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8219:41: note: 'RD2' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD2                 __at(0x7C1A);       // @ (0xF83 * 8 + 2)
+                                        ^
+lcd.c:41:2: warning: 'RD3' is deprecated [-Wdeprecated-declarations]
+        EN  = 1;             // => E = 1
+        ^
+lcd.c:6:12: note: expanded from macro 'EN'
+#define EN RD3
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222:41: note: 'RD3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD3                 __at(0x7C1B);       // @ (0xF83 * 8 + 3)
+                                        ^
+lcd.c:43:9: warning: 'RD3' is deprecated [-Wdeprecated-declarations]
+        EN  = 0;             // => E = 0
+        ^
+lcd.c:6:12: note: expanded from macro 'EN'
+#define EN RD3
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222:41: note: 'RD3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD3                 __at(0x7C1B);       // @ (0xF83 * 8 + 3)
+                                        ^
+lcd.c:112:4: warning: 'RD2' is deprecated [-Wdeprecated-declarations]
+   RS = 1;             // => RS = 1
+   ^
+lcd.c:5:12: note: expanded from macro 'RS'
+#define RS RD2
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8219:41: note: 'RD2' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD2                 __at(0x7C1A);       // @ (0xF83 * 8 + 2)
+                                        ^
+lcd.c:114:4: warning: 'RD3' is deprecated [-Wdeprecated-declarations]
+   EN = 1;
+   ^
+lcd.c:6:12: note: expanded from macro 'EN'
+#define EN RD3
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222:41: note: 'RD3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD3                 __at(0x7C1B);       // @ (0xF83 * 8 + 3)
+                                        ^
+lcd.c:116:4: warning: 'RD3' is deprecated [-Wdeprecated-declarations]
+   EN = 0;
+   ^
+lcd.c:6:12: note: expanded from macro 'EN'
+#define EN RD3
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222:41: note: 'RD3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD3                 __at(0x7C1B);       // @ (0xF83 * 8 + 3)
+                                        ^
+lcd.c:118:4: warning: 'RD3' is deprecated [-Wdeprecated-declarations]
+   EN = 1;
+   ^
+lcd.c:6:12: note: expanded from macro 'EN'
+#define EN RD3
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222:41: note: 'RD3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD3                 __at(0x7C1B);       // @ (0xF83 * 8 + 3)
+                                        ^
+lcd.c:120:4: warning: 'RD3' is deprecated [-Wdeprecated-declarations]
+   EN = 0;
+   ^
+lcd.c:6:12: note: expanded from macro 'EN'
+#define EN RD3
+           ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222:41: note: 'RD3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RD3                 __at(0x7C1B);       // @ (0xF83 * 8 + 3)
+                                        ^
+16 warnings generated.
+make[2]: Leaving directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+make[2]: Entering directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+"C:\Program Files\Microchip\xc8\v2.46\bin\xc8-cc.exe"  -mcpu=18F4321 -c   -mdfp="D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O3 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/defaultActiveCA/production/main.p1 main.c 
+::: advisory: (2051) the current license does not permit the selected optimization level, using optimization level 2
+main.c:83:20: warning: incompatible integer to pointer conversion returning 'unsigned int' from a function with result type 'char *' [-Wint-conversion]
+            return 'b';  // Return 'b' to indicate back action
+                   ^~~
+main.c:93:66: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wconversion]
+                Lcd_Set_Cursor( position_row_3,position_column_8 + counter);
+                ~~~~~~~~~~~~~~                 ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.c:100:70: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wconversion]
+                    Lcd_Set_Cursor( position_row_3,position_column_8 + counter);
+                    ~~~~~~~~~~~~~~                 ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+main.c:114:12: warning: address of stack memory associated with local variable 'inputBuffer' returned [-Wreturn-stack-address]
+    return inputBuffer;
+           ^~~~~~~~~~~
+main.c:369:31: warning: implicit conversion changes signedness: 'long' to 'unsigned long' [-Wsign-conversion]
+    long expected = 1023 - (((ms/1000UL) * (calculateBitRatePer10Sec(volume, processTimeToSeconds(timeInfusion)))/10)) ;
+                              ^~~
+main.c:369:45: warning: implicit conversion changes signedness: 'long' to 'unsigned long' [-Wsign-conversion]
+    long expected = 1023 - (((ms/1000UL) * (calculateBitRatePer10Sec(volume, processTimeToSeconds(timeInfusion)))/10)) ;
+                                         ~  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c:369:99: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wconversion]
+    long expected = 1023 - (((ms/1000UL) * (calculateBitRatePer10Sec(volume, processTimeToSeconds(timeInfusion)))/10)) ;
+                                                                             ~~~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~
+main.c:385:42: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wconversion]
+    long stopTime = processTimeToSeconds(timeInfusion);
+                    ~~~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~~
+main.c:408:34: warning: implicit conversion loses integer precision: 'long' to 'uint16_t' (aka 'unsigned short') [-Wconversion]
+        move_actuator(backwards, controlSignal);
+        ~~~~~~~~~~~~~            ^~~~~~~~~~~~~
+main.c:431:29: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+        sprintf(buff, "%d", stopTime - (mil/1000));
+                       ~~   ^~~~~~~~~~~~~~~~~~~~~
+                       %ld
+main.c:435:18: warning: implicit conversion loses integer precision: 'long' to 'unsigned int' [-Wconversion]
+        delay_ms(dT);
+        ~~~~~~~~ ^~
+main.c:469:17: warning: 10 enumeration values not handled in switch: 'INPUT_VOLUME_STATE', 'INPUT_TIME_STATE', 'CONFIRM_START_INFUSION'... [-Wswitch]
+        switch (currentState) {
+                ^
+main.c:587:13: warning: 8 enumeration values not handled in switch: 'SETTINGS', 'ABOUT_PAGE', 'ERROR_SCREEN'... [-Wswitch]
+    switch (currentState) {
+            ^
+main.c:617:17: warning: 9 enumeration values not handled in switch: 'WELCOME_SCREEN', 'SETTINGS', 'ABOUT_PAGE'... [-Wswitch]
+        switch (currentState) {   
+                ^
+14 warnings generated.
+make[2]: Leaving directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+make[2]: Entering directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+"C:\Program Files\Microchip\xc8\v2.46\bin\xc8-cc.exe"  -mcpu=18F4321 -c   -mdfp="D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O3 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/defaultActiveCA/production/helper.p1 helper.c 
+::: advisory: (2051) the current license does not permit the selected optimization level, using optimization level 2
+make[2]: Leaving directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+make[2]: Entering directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+"C:\Program Files\Microchip\xc8\v2.46\bin\xc8-cc.exe"  -mcpu=18F4321 -c   -mdfp="D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O3 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_defaultActiveCA=defaultActiveCA  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o .ca/build/defaultActiveCA/production/keypad.p1 keypad.c 
+::: advisory: (2051) the current license does not permit the selected optimization level, using optimization level 2
+keypad.c:5:13: warning: 'RB0' is deprecated [-Wdeprecated-declarations]
+            X_1 = 0; X_2 = 1; X_3 = 1; X_4 = 1;    
+            ^
+./keypad.h:5:16: note: expanded from macro 'X_1'
+#define X_1    RB0
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8111:41: note: 'RB0' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB0                 __at(0x7C08);       // @ (0xF81 * 8 + 0)
+                                        ^
+keypad.c:5:22: warning: 'RB1' is deprecated [-Wdeprecated-declarations]
+            X_1 = 0; X_2 = 1; X_3 = 1; X_4 = 1;    
+                     ^
+./keypad.h:6:16: note: expanded from macro 'X_2'
+#define X_2    RB1
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8114:41: note: 'RB1' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB1                 __at(0x7C09);       // @ (0xF81 * 8 + 1)
+                                        ^
+keypad.c:5:31: warning: 'RB2' is deprecated [-Wdeprecated-declarations]
+            X_1 = 0; X_2 = 1; X_3 = 1; X_4 = 1;    
+                              ^
+./keypad.h:7:16: note: expanded from macro 'X_3'
+#define X_3    RB2
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8117:41: note: 'RB2' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB2                 __at(0x7C0A);       // @ (0xF81 * 8 + 2)
+                                        ^
+keypad.c:5:40: warning: 'RB3' is deprecated [-Wdeprecated-declarations]
+            X_1 = 0; X_2 = 1; X_3 = 1; X_4 = 1;    
+                                       ^
+./keypad.h:8:16: note: expanded from macro 'X_4'
+#define X_4    RB3
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8120:41: note: 'RB3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB3                 __at(0x7C0B);       // @ (0xF81 * 8 + 3)
+                                        ^
+keypad.c:6:17: warning: 'RB4' is deprecated [-Wdeprecated-declarations]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '7'; }
+                ^
+./keypad.h:9:16: note: expanded from macro 'Y_1'
+#define Y_1    RB4
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123:41: note: 'RB4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB4                 __at(0x7C0C);       // @ (0xF81 * 8 + 4)
+                                        ^
+keypad.c:6:53: warning: 'RB4' is deprecated [-Wdeprecated-declarations]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '7'; }
+                                                    ^
+./keypad.h:9:16: note: expanded from macro 'Y_1'
+#define Y_1    RB4
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123:41: note: 'RB4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB4                 __at(0x7C0C);       // @ (0xF81 * 8 + 4)
+                                        ^
+keypad.c:6:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '7'; }
+                                                           ^
+keypad.c:6:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:7:17: warning: 'RC7' is deprecated [-Wdeprecated-declarations]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '8'; }
+                ^
+./keypad.h:10:16: note: expanded from macro 'Y_2'
+#define Y_2    RC7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177:41: note: 'RC7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC7                 __at(0x7C17);       // @ (0xF82 * 8 + 7)
+                                        ^
+keypad.c:7:53: warning: 'RC7' is deprecated [-Wdeprecated-declarations]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '8'; }
+                                                    ^
+./keypad.h:10:16: note: expanded from macro 'Y_2'
+#define Y_2    RC7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177:41: note: 'RC7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC7                 __at(0x7C17);       // @ (0xF82 * 8 + 7)
+                                        ^
+keypad.c:7:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '8'; }
+                                                           ^
+keypad.c:7:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:8:17: warning: 'RB6' is deprecated [-Wdeprecated-declarations]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '9'; }
+                ^
+./keypad.h:11:16: note: expanded from macro 'Y_3'
+#define Y_3    RB6
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129:41: note: 'RB6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB6                 __at(0x7C0E);       // @ (0xF81 * 8 + 6)
+                                        ^
+keypad.c:8:53: warning: 'RB6' is deprecated [-Wdeprecated-declarations]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '9'; }
+                                                    ^
+./keypad.h:11:16: note: expanded from macro 'Y_3'
+#define Y_3    RB6
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129:41: note: 'RB6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB6                 __at(0x7C0E);       // @ (0xF81 * 8 + 6)
+                                        ^
+keypad.c:8:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '9'; }
+                                                           ^
+keypad.c:8:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:9:17: warning: 'RB7' is deprecated [-Wdeprecated-declarations]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'u'; }
+                ^
+./keypad.h:12:16: note: expanded from macro 'Y_4'
+#define Y_4    RB7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132:41: note: 'RB7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB7                 __at(0x7C0F);       // @ (0xF81 * 8 + 7)
+                                        ^
+keypad.c:9:53: warning: 'RB7' is deprecated [-Wdeprecated-declarations]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'u'; }
+                                                    ^
+./keypad.h:12:16: note: expanded from macro 'Y_4'
+#define Y_4    RB7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132:41: note: 'RB7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB7                 __at(0x7C0F);       // @ (0xF81 * 8 + 7)
+                                        ^
+keypad.c:9:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'u'; }
+                                                           ^
+keypad.c:9:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:11:13: warning: 'RB0' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 0; X_3 = 1; X_4 = 1;    
+            ^
+./keypad.h:5:16: note: expanded from macro 'X_1'
+#define X_1    RB0
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8111:41: note: 'RB0' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB0                 __at(0x7C08);       // @ (0xF81 * 8 + 0)
+                                        ^
+keypad.c:11:22: warning: 'RB1' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 0; X_3 = 1; X_4 = 1;    
+                     ^
+./keypad.h:6:16: note: expanded from macro 'X_2'
+#define X_2    RB1
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8114:41: note: 'RB1' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB1                 __at(0x7C09);       // @ (0xF81 * 8 + 1)
+                                        ^
+keypad.c:11:31: warning: 'RB2' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 0; X_3 = 1; X_4 = 1;    
+                              ^
+./keypad.h:7:16: note: expanded from macro 'X_3'
+#define X_3    RB2
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8117:41: note: 'RB2' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB2                 __at(0x7C0A);       // @ (0xF81 * 8 + 2)
+                                        ^
+keypad.c:11:40: warning: 'RB3' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 0; X_3 = 1; X_4 = 1;    
+                                       ^
+./keypad.h:8:16: note: expanded from macro 'X_4'
+#define X_4    RB3
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8120:41: note: 'RB3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB3                 __at(0x7C0B);       // @ (0xF81 * 8 + 3)
+                                        ^
+keypad.c:12:17: warning: 'RB4' is deprecated [-Wdeprecated-declarations]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '4'; }
+                ^
+./keypad.h:9:16: note: expanded from macro 'Y_1'
+#define Y_1    RB4
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123:41: note: 'RB4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB4                 __at(0x7C0C);       // @ (0xF81 * 8 + 4)
+                                        ^
+keypad.c:12:53: warning: 'RB4' is deprecated [-Wdeprecated-declarations]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '4'; }
+                                                    ^
+./keypad.h:9:16: note: expanded from macro 'Y_1'
+#define Y_1    RB4
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123:41: note: 'RB4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB4                 __at(0x7C0C);       // @ (0xF81 * 8 + 4)
+                                        ^
+keypad.c:12:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '4'; }
+                                                           ^
+keypad.c:12:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:13:17: warning: 'RC7' is deprecated [-Wdeprecated-declarations]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '5'; }
+                ^
+./keypad.h:10:16: note: expanded from macro 'Y_2'
+#define Y_2    RC7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177:41: note: 'RC7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC7                 __at(0x7C17);       // @ (0xF82 * 8 + 7)
+                                        ^
+keypad.c:13:53: warning: 'RC7' is deprecated [-Wdeprecated-declarations]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '5'; }
+                                                    ^
+./keypad.h:10:16: note: expanded from macro 'Y_2'
+#define Y_2    RC7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177:41: note: 'RC7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC7                 __at(0x7C17);       // @ (0xF82 * 8 + 7)
+                                        ^
+keypad.c:13:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '5'; }
+                                                           ^
+keypad.c:13:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:14:17: warning: 'RB6' is deprecated [-Wdeprecated-declarations]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '6'; }
+                ^
+./keypad.h:11:16: note: expanded from macro 'Y_3'
+#define Y_3    RB6
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129:41: note: 'RB6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB6                 __at(0x7C0E);       // @ (0xF81 * 8 + 6)
+                                        ^
+keypad.c:14:53: warning: 'RB6' is deprecated [-Wdeprecated-declarations]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '6'; }
+                                                    ^
+./keypad.h:11:16: note: expanded from macro 'Y_3'
+#define Y_3    RB6
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129:41: note: 'RB6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB6                 __at(0x7C0E);       // @ (0xF81 * 8 + 6)
+                                        ^
+keypad.c:14:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '6'; }
+                                                           ^
+keypad.c:14:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:15:17: warning: 'RB7' is deprecated [-Wdeprecated-declarations]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'r'; }
+                ^
+./keypad.h:12:16: note: expanded from macro 'Y_4'
+#define Y_4    RB7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132:41: note: 'RB7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB7                 __at(0x7C0F);       // @ (0xF81 * 8 + 7)
+                                        ^
+keypad.c:15:53: warning: 'RB7' is deprecated [-Wdeprecated-declarations]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'r'; }
+                                                    ^
+./keypad.h:12:16: note: expanded from macro 'Y_4'
+#define Y_4    RB7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132:41: note: 'RB7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB7                 __at(0x7C0F);       // @ (0xF81 * 8 + 7)
+                                        ^
+keypad.c:15:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'r'; }
+                                                           ^
+keypad.c:15:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:17:13: warning: 'RB0' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 1; X_3 = 0; X_4 = 1;    
+            ^
+./keypad.h:5:16: note: expanded from macro 'X_1'
+#define X_1    RB0
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8111:41: note: 'RB0' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB0                 __at(0x7C08);       // @ (0xF81 * 8 + 0)
+                                        ^
+keypad.c:17:22: warning: 'RB1' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 1; X_3 = 0; X_4 = 1;    
+                     ^
+./keypad.h:6:16: note: expanded from macro 'X_2'
+#define X_2    RB1
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8114:41: note: 'RB1' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB1                 __at(0x7C09);       // @ (0xF81 * 8 + 1)
+                                        ^
+keypad.c:17:31: warning: 'RB2' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 1; X_3 = 0; X_4 = 1;    
+                              ^
+./keypad.h:7:16: note: expanded from macro 'X_3'
+#define X_3    RB2
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8117:41: note: 'RB2' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB2                 __at(0x7C0A);       // @ (0xF81 * 8 + 2)
+                                        ^
+keypad.c:17:40: warning: 'RB3' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 1; X_3 = 0; X_4 = 1;    
+                                       ^
+./keypad.h:8:16: note: expanded from macro 'X_4'
+#define X_4    RB3
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8120:41: note: 'RB3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB3                 __at(0x7C0B);       // @ (0xF81 * 8 + 3)
+                                        ^
+keypad.c:18:17: warning: 'RB4' is deprecated [-Wdeprecated-declarations]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '1'; }
+                ^
+./keypad.h:9:16: note: expanded from macro 'Y_1'
+#define Y_1    RB4
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123:41: note: 'RB4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB4                 __at(0x7C0C);       // @ (0xF81 * 8 + 4)
+                                        ^
+keypad.c:18:53: warning: 'RB4' is deprecated [-Wdeprecated-declarations]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '1'; }
+                                                    ^
+./keypad.h:9:16: note: expanded from macro 'Y_1'
+#define Y_1    RB4
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123:41: note: 'RB4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB4                 __at(0x7C0C);       // @ (0xF81 * 8 + 4)
+                                        ^
+keypad.c:18:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return '1'; }
+                                                           ^
+keypad.c:18:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:19:17: warning: 'RC7' is deprecated [-Wdeprecated-declarations]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '2'; }
+                ^
+./keypad.h:10:16: note: expanded from macro 'Y_2'
+#define Y_2    RC7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177:41: note: 'RC7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC7                 __at(0x7C17);       // @ (0xF82 * 8 + 7)
+                                        ^
+keypad.c:19:53: warning: 'RC7' is deprecated [-Wdeprecated-declarations]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '2'; }
+                                                    ^
+./keypad.h:10:16: note: expanded from macro 'Y_2'
+#define Y_2    RC7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177:41: note: 'RC7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC7                 __at(0x7C17);       // @ (0xF82 * 8 + 7)
+                                        ^
+keypad.c:19:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '2'; }
+                                                           ^
+keypad.c:19:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:20:17: warning: 'RB6' is deprecated [-Wdeprecated-declarations]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '3'; }
+                ^
+./keypad.h:11:16: note: expanded from macro 'Y_3'
+#define Y_3    RB6
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129:41: note: 'RB6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB6                 __at(0x7C0E);       // @ (0xF81 * 8 + 6)
+                                        ^
+keypad.c:20:53: warning: 'RB6' is deprecated [-Wdeprecated-declarations]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '3'; }
+                                                    ^
+./keypad.h:11:16: note: expanded from macro 'Y_3'
+#define Y_3    RB6
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129:41: note: 'RB6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB6                 __at(0x7C0E);       // @ (0xF81 * 8 + 6)
+                                        ^
+keypad.c:20:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '3'; }
+                                                           ^
+keypad.c:20:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:21:17: warning: 'RB7' is deprecated [-Wdeprecated-declarations]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'l'; }
+                ^
+./keypad.h:12:16: note: expanded from macro 'Y_4'
+#define Y_4    RB7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132:41: note: 'RB7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB7                 __at(0x7C0F);       // @ (0xF81 * 8 + 7)
+                                        ^
+keypad.c:21:53: warning: 'RB7' is deprecated [-Wdeprecated-declarations]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'l'; }
+                                                    ^
+./keypad.h:12:16: note: expanded from macro 'Y_4'
+#define Y_4    RB7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132:41: note: 'RB7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB7                 __at(0x7C0F);       // @ (0xF81 * 8 + 7)
+                                        ^
+keypad.c:21:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'l'; }
+                                                           ^
+keypad.c:21:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:23:13: warning: 'RB0' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 1; X_3 = 1; X_4 = 0;    
+            ^
+./keypad.h:5:16: note: expanded from macro 'X_1'
+#define X_1    RB0
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8111:41: note: 'RB0' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB0                 __at(0x7C08);       // @ (0xF81 * 8 + 0)
+                                        ^
+keypad.c:23:22: warning: 'RB1' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 1; X_3 = 1; X_4 = 0;    
+                     ^
+./keypad.h:6:16: note: expanded from macro 'X_2'
+#define X_2    RB1
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8114:41: note: 'RB1' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB1                 __at(0x7C09);       // @ (0xF81 * 8 + 1)
+                                        ^
+keypad.c:23:31: warning: 'RB2' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 1; X_3 = 1; X_4 = 0;    
+                              ^
+./keypad.h:7:16: note: expanded from macro 'X_3'
+#define X_3    RB2
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8117:41: note: 'RB2' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB2                 __at(0x7C0A);       // @ (0xF81 * 8 + 2)
+                                        ^
+keypad.c:23:40: warning: 'RB3' is deprecated [-Wdeprecated-declarations]
+            X_1 = 1; X_2 = 1; X_3 = 1; X_4 = 0;    
+                                       ^
+./keypad.h:8:16: note: expanded from macro 'X_4'
+#define X_4    RB3
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8120:41: note: 'RB3' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB3                 __at(0x7C0B);       // @ (0xF81 * 8 + 3)
+                                        ^
+keypad.c:24:17: warning: 'RB4' is deprecated [-Wdeprecated-declarations]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return 'b'; }
+                ^
+./keypad.h:9:16: note: expanded from macro 'Y_1'
+#define Y_1    RB4
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123:41: note: 'RB4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB4                 __at(0x7C0C);       // @ (0xF81 * 8 + 4)
+                                        ^
+keypad.c:24:53: warning: 'RB4' is deprecated [-Wdeprecated-declarations]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return 'b'; }
+                                                    ^
+./keypad.h:9:16: note: expanded from macro 'Y_1'
+#define Y_1    RB4
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123:41: note: 'RB4' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB4                 __at(0x7C0C);       // @ (0xF81 * 8 + 4)
+                                        ^
+keypad.c:24:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_1 == 0) { __delay_ms(100); while (Y_1==0); return 'b'; }
+                                                           ^
+keypad.c:24:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:25:17: warning: 'RC7' is deprecated [-Wdeprecated-declarations]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '0'; }
+                ^
+./keypad.h:10:16: note: expanded from macro 'Y_2'
+#define Y_2    RC7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177:41: note: 'RC7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC7                 __at(0x7C17);       // @ (0xF82 * 8 + 7)
+                                        ^
+keypad.c:25:53: warning: 'RC7' is deprecated [-Wdeprecated-declarations]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '0'; }
+                                                    ^
+./keypad.h:10:16: note: expanded from macro 'Y_2'
+#define Y_2    RC7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177:41: note: 'RC7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RC7                 __at(0x7C17);       // @ (0xF82 * 8 + 7)
+                                        ^
+keypad.c:25:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_2 == 0) { __delay_ms(100); while (Y_2==0); return '0'; }
+                                                           ^
+keypad.c:25:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:26:17: warning: 'RB6' is deprecated [-Wdeprecated-declarations]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '.'; }
+                ^
+./keypad.h:11:16: note: expanded from macro 'Y_3'
+#define Y_3    RB6
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129:41: note: 'RB6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB6                 __at(0x7C0E);       // @ (0xF81 * 8 + 6)
+                                        ^
+keypad.c:26:53: warning: 'RB6' is deprecated [-Wdeprecated-declarations]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '.'; }
+                                                    ^
+./keypad.h:11:16: note: expanded from macro 'Y_3'
+#define Y_3    RB6
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129:41: note: 'RB6' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB6                 __at(0x7C0E);       // @ (0xF81 * 8 + 6)
+                                        ^
+keypad.c:26:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_3 == 0) { __delay_ms(100); while (Y_3==0); return '.'; }
+                                                           ^
+keypad.c:26:60: note: put the semicolon on a separate line to silence this warning
+keypad.c:27:17: warning: 'RB7' is deprecated [-Wdeprecated-declarations]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'd'; }
+                ^
+./keypad.h:12:16: note: expanded from macro 'Y_4'
+#define Y_4    RB7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132:41: note: 'RB7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB7                 __at(0x7C0F);       // @ (0xF81 * 8 + 7)
+                                        ^
+keypad.c:27:53: warning: 'RB7' is deprecated [-Wdeprecated-declarations]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'd'; }
+                                                    ^
+./keypad.h:12:16: note: expanded from macro 'Y_4'
+#define Y_4    RB7
+               ^
+D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132:41: note: 'RB7' has been explicitly marked deprecated here
+extern volatile __bit _DEPRECATED       RB7                 __at(0x7C0F);       // @ (0xF81 * 8 + 7)
+                                        ^
+keypad.c:27:60: warning: while loop has empty body [-Wempty-body]
+            if (Y_4 == 0) { __delay_ms(100); while (Y_4==0); return 'd'; }
+                                                           ^
+keypad.c:27:60: note: put the semicolon on a separate line to silence this warning
+64 warnings generated.
+make[2]: Leaving directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+make[2]: Entering directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+"C:\Program Files\Microchip\xc8\v2.46\bin\xc8-cc.exe"  -mcpu=18F4321 -Wl,-Map=.ca/dist/defaultActiveCA/production/mediSync.X.production.map  -DXPRJ_defaultActiveCA=defaultActiveCA  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O3 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto      -Wl,--memorysummary,.ca/dist/defaultActiveCA/production/memoryfile.xml -o .ca/dist/defaultActiveCA/production/mediSync.X.production.elf  .ca/build/defaultActiveCA/production/lcd.p1 .ca/build/defaultActiveCA/production/actuator.p1 .ca/build/defaultActiveCA/production/helper.p1 .ca/build/defaultActiveCA/production/servo.p1 .ca/build/defaultActiveCA/production/keypad.p1 .ca/build/defaultActiveCA/production/main.p1     
+::: advisory: (2051) the current license does not permit the selected optimization level, using optimization level 2
+lcd.c:18:: warning: (1385) variable "_RD4" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8225)
+lcd.c:20:: warning: (1385) variable "_RD4" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8225)
+lcd.c:23:: warning: (1385) variable "_RD5" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8228)
+lcd.c:25:: warning: (1385) variable "_RD5" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8228)
+lcd.c:28:: warning: (1385) variable "_RD6" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8231)
+lcd.c:30:: warning: (1385) variable "_RD6" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8231)
+lcd.c:33:: warning: (1385) variable "_RD7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8234)
+lcd.c:35:: warning: (1385) variable "_RD7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8234)
+lcd.c:39:: warning: (1385) variable "_RD2" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8219)
+lcd.c:41:: warning: (1385) variable "_RD3" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222)
+lcd.c:43:: warning: (1385) variable "_RD3" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222)
+lcd.c:112:: warning: (1385) variable "_RD2" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8219)
+lcd.c:114:: warning: (1385) variable "_RD3" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222)
+lcd.c:116:: warning: (1385) variable "_RD3" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222)
+lcd.c:118:: warning: (1385) variable "_RD3" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222)
+lcd.c:120:: warning: (1385) variable "_RD3" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8222)
+actuator.c:6:: warning: (1385) variable "_RC2" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8162)
+actuator.c:25:: warning: (1385) variable "_RD1" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8213)
+actuator.c:26:: warning: (1385) variable "_RD0" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8210)
+keypad.c:5:: warning: (1385) variable "_RB0" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8111)
+keypad.c:6:: warning: (1385) variable "_RB4" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123)
+keypad.c:7:: warning: (1385) variable "_RC7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177)
+keypad.c:8:: warning: (1385) variable "_RB6" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129)
+keypad.c:9:: warning: (1385) variable "_RB7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132)
+keypad.c:11:: warning: (1385) variable "_RB0" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8111)
+keypad.c:12:: warning: (1385) variable "_RB4" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123)
+keypad.c:13:: warning: (1385) variable "_RC7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177)
+keypad.c:14:: warning: (1385) variable "_RB6" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129)
+keypad.c:15:: warning: (1385) variable "_RB7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132)
+keypad.c:17:: warning: (1385) variable "_RB0" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8111)
+keypad.c:18:: warning: (1385) variable "_RB4" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123)
+keypad.c:19:: warning: (1385) variable "_RC7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177)
+keypad.c:20:: warning: (1385) variable "_RB6" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129)
+keypad.c:21:: warning: (1385) variable "_RB7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132)
+keypad.c:23:: warning: (1385) variable "_RB0" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8111)
+keypad.c:24:: warning: (1385) variable "_RB4" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8123)
+keypad.c:25:: warning: (1385) variable "_RC7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8177)
+keypad.c:26:: warning: (1385) variable "_RB6" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8129)
+keypad.c:27:: warning: (1385) variable "_RB7" is deprecated (declared at D:/MPLABX/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4321.h:8132)
+helper.c:49:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Clear)
+helper.c:103:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Clear)
+helper.c:121:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Clear)
+helper.c:131:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Clear)
+main.c:149:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Init)
+main.c:241:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Clear)
+main.c:386:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Clear)
+main.c:395:: warning: (755) divide by zero
+main.c:436:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Clear)
+main.c:443:: warning: (1518) direct function call made with an incomplete prototype (Lcd_Clear)
+main.c:619:: warning: (1518) direct function call made with an incomplete prototype (menu)
+main.c:626:: warning: (1518) direct function call made with an incomplete prototype (manual)
+
+Memory Summary:
+    Program space        used  1CADh (  7341) of  2000h bytes   ( 89.6%)
+    Data space           used    F7h (   247) of   200h bytes   ( 48.2%)
+    Configuration bits   used     7h (     7) of     7h words   (100.0%)
+    EEPROM space         used     0h (     0) of   100h bytes   (  0.0%)
+    ID Location space    used     0h (     0) of     8h bytes   (  0.0%)
+
+make[2]: Leaving directory 'C:/Users/USER/MPLABXProjects/mediSync.X'
+[32mBUILD SUCCESSFUL (total time: 6s)[0m
